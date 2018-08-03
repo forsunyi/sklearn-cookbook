@@ -28,6 +28,8 @@ def fit_2_regression(lr):
 
     for i, ax in enumerate(axes):
         ax.hist(coefs[:, i], color='b', alpha=.5)
-        ax.set_tile("Coef {}".format(i))
+        ax.set_title("Coef {}".format(i))
+
+    plt.show()
 
     return coefs
